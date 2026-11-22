@@ -1,0 +1,22 @@
+split,model,blend_weight,n,mae,rmse,r2
+train,Persistence,0.0,11813,1.02901,2.83876,0.98563
+train,Ridge (unshrunk),1.0,11813,1.00433,2.0044,0.99284
+train,Ridge (CV blended),0.0,11813,1.02901,2.83876,0.98563
+train,Random Forest (unshrunk),1.0,11813,0.66799,1.50979,0.99594
+train,Random Forest (CV blended),0.0,11813,1.02901,2.83876,0.98563
+train,Regularized Gradient Boosting (unshrunk),1.0,11813,0.82646,1.91281,0.99348
+train,Regularized Gradient Boosting (CV blended),0.0,11813,1.02901,2.83876,0.98563
+validation,Persistence,0.0,2213,1.07569,1.73006,0.9935
+validation,Ridge (unshrunk),1.0,2213,1.92361,2.39503,0.98754
+validation,Ridge (CV blended),0.0,2213,1.07569,1.73006,0.9935
+validation,Random Forest (unshrunk),1.0,2213,1.20929,1.71866,0.99359
+validation,Random Forest (CV blended),0.0,2213,1.07569,1.73006,0.9935
+validation,Regularized Gradient Boosting (unshrunk),1.0,2213,0.85548,1.41607,0.99565
+validation,Regularized Gradient Boosting (CV blended),0.0,2213,1.07569,1.73006,0.9935
+historical_test,Persistence,0.0,2643,0.42111,0.79287,0.99832
+historical_test,Ridge (unshrunk),1.0,2643,1.28761,1.70732,0.99223
+historical_test,Ridge (CV blended),0.0,2643,0.42111,0.79287,0.99832
+historical_test,Random Forest (unshrunk),1.0,2643,1.00811,1.46389,0.99428
+historical_test,Random Forest (CV blended),0.0,2643,0.42111,0.79287,0.99832
+historical_test,Regularized Gradient Boosting (unshrunk),1.0,2643,0.65239,1.15085,0.99647
+historical_test,Regularized Gradient Boosting (CV blended),0.0,2643,0.42111,0.79287,0.99832

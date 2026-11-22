@@ -1,0 +1,27 @@
+model,feature_group,validation_rows,unpermuted_mae,mae_increase_mean_pp,mae_increase_std_pp,repeats
+Random Forest,soil_moisture,800,1.280369,0.539984,0.027935,4
+Random Forest,weather_temp,800,1.280369,-0.000417,0.000392,4
+Random Forest,weather_humidity,800,1.280369,-0.002718,0.003125,4
+Random Forest,weather_rain,800,1.280369,-0.0,1.2e-05,4
+Random Forest,weather_pressure,800,1.280369,-1.4e-05,0.000643,4
+Random Forest,weather_wind_speed,800,1.280369,0.002266,0.000634,4
+Random Forest,weather_radiation,800,1.280369,0.005935,0.001368,4
+Random Forest,soil_temperature_0-7cm,800,1.280369,-0.027423,0.003086,4
+Random Forest,soil_temperature_7-18cm,800,1.280369,-0.011758,0.021207,4
+Random Forest,irrigation_duration_minutes,800,1.280369,0.0,0.0,4
+Random Forest,month,800,1.280369,0.0,0.0,4
+Random Forest,hour,800,1.280369,-0.014545,0.001781,4
+Random Forest,agricultural_zone,800,1.280369,1.608151,0.072417,4
+Regularized Gradient Boosting,soil_moisture,800,0.917406,0.41745,0.04304,4
+Regularized Gradient Boosting,weather_temp,800,0.917406,0.0,0.0,4
+Regularized Gradient Boosting,weather_humidity,800,0.917406,0.0,0.0,4
+Regularized Gradient Boosting,weather_rain,800,0.917406,0.0,0.0,4
+Regularized Gradient Boosting,weather_pressure,800,0.917406,0.0,0.0,4
+Regularized Gradient Boosting,weather_wind_speed,800,0.917406,0.0,0.0,4
+Regularized Gradient Boosting,weather_radiation,800,0.917406,0.0,0.0,4
+Regularized Gradient Boosting,soil_temperature_0-7cm,800,0.917406,0.0,0.0,4
+Regularized Gradient Boosting,soil_temperature_7-18cm,800,0.917406,-0.003326,0.001407,4
+Regularized Gradient Boosting,irrigation_duration_minutes,800,0.917406,0.0,0.0,4
+Regularized Gradient Boosting,month,800,0.917406,0.0,0.0,4
+Regularized Gradient Boosting,hour,800,0.917406,0.0,0.0,4
+Regularized Gradient Boosting,agricultural_zone,800,0.917406,1.270169,0.034707,4

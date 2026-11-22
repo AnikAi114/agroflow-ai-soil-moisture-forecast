@@ -1,0 +1,25 @@
+# Rename this file to .gitignore ONLY after checking your existing .gitignore.
+# Keep source datasets and binary fitted models out of the public repo.
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.idea/
+.DS_Store
+.env
+.env.*
+*.log
+
+# Download the 5-zone dataset from its official publisher.
+01_raw_data/
+02_processed_data/
+
+# Trained models and local evaluation artifacts are regenerated locally.
+agroflow_artifacts/
+phase2_outputs/*.joblib
+phase2_outputs/historical_test_predictions.csv
+phase4_outputs/
+
+# Dataset publisher's local processing files can be cited instead of committed.
+# Keep 03_code/ only if its publisher license and attribution permit redistribution.

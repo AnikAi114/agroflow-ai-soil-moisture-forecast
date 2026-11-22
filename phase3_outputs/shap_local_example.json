@@ -1,0 +1,11 @@
+{
+  "timestamp": "2025-09-04 05:40:00",
+  "zone": 5,
+  "current_soil_moisture": 22.0,
+  "actual_24h_soil_moisture": 19.0,
+  "unclipped_model_predicted_delta": -3.9174,
+  "forecast_soil_moisture": 18.0826,
+  "shap_base_delta": -0.4133,
+  "grouped_shap_sum": -3.504,
+  "max_shap_reconstruction_difference": 7.993605777301127e-15
+}

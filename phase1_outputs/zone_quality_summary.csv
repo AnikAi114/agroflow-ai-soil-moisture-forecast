@@ -1,0 +1,6 @@
+zone,records,first_timestamp,last_timestamp,regular_10min_intervals,gaps_over_10min,short_intervals_below_10min,regular_interval_percent,verified_exact_24h_windows,verified_24h_percent,moisture_mean,moisture_median,moisture_min,moisture_max,moisture_at_0_percent,moisture_at_100_percent,irrigation_active_intervals,observed_valve_open_minutes,rain_positive_intervals,ph_outside_3_to_9,ec_outside_0_to_1000,ph_missing,ec_missing
+1,9531,2025-02-28 15:00:00,2025-09-04 18:50:00,8724,806,0,91.54,4533,47.56,32.44,23.0,7.0,80.0,0.0,0.0,347,3012.0,792,0,0,0,0
+2,11929,2025-02-28 14:20:00,2025-09-23 10:10:00,10883,1045,0,91.24,7077,59.33,25.51,19.0,3.0,82.0,0.0,0.0,610,5262.0,1161,0,0,0,0
+3,1118,2025-02-14 13:10:00,2025-06-25 08:10:00,807,310,0,72.25,0,0.0,77.56,79.0,21.0,100.0,0.0,10.55,160,1202.0,156,12,19,0,0
+4,12676,2025-03-01 07:10:00,2025-09-23 14:40:00,11689,986,0,92.22,3774,29.77,76.73,80.0,35.0,100.0,0.0,2.05,1060,9163.0,962,0,0,0,0
+5,11814,2025-02-11 09:20:00,2025-09-22 20:00:00,10219,1594,0,86.51,2230,18.88,54.11,66.0,0.0,100.0,3.51,0.05,228,1607.0,1226,33,26,0,0

@@ -1,0 +1,14 @@
+feature_group,mean_abs_shap_on_predicted_change_pp,mean_signed_shap_on_predicted_change_pp,n
+agricultural_zone,1.8738463390618176,-1.6566293647798687,300
+soil_moisture,0.7670205846164878,0.7666978401613309,300
+soil_temperature_7-18cm,0.14157994474297117,-0.07922259773568405,300
+weather_pressure,0.002376916687294664,-0.001858286243099051,300
+weather_temp,0.0011177191506882096,-0.00028431213578864275,300
+weather_rain,0.0,0.0,300
+weather_humidity,0.0,0.0,300
+weather_radiation,0.0,0.0,300
+weather_wind_speed,0.0,0.0,300
+soil_temperature_0-7cm,0.0,0.0,300
+irrigation_duration_minutes,0.0,0.0,300
+month,0.0,0.0,300
+hour,0.0,0.0,300

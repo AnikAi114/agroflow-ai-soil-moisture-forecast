@@ -1,0 +1,14 @@
+feature_group,shap_contribution_to_change_pp
+agricultural_zone,-5.113289526133979
+weather_temp,-0.0012536222143213131
+weather_rain,0.0
+weather_humidity,0.0
+soil_temperature_0-7cm,0.0
+weather_radiation,0.0
+irrigation_duration_minutes,0.0
+weather_wind_speed,0.0
+hour,0.0
+month,0.0
+weather_pressure,0.002117723750716843
+soil_temperature_7-18cm,0.03042751764783952
+soil_moisture,1.5779613311586762

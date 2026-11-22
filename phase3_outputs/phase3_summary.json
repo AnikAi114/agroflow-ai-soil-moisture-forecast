@@ -1,0 +1,23 @@
+{
+  "phase": 3,
+  "purpose": "Exploratory explanation of existing Phase 2 unshrunk models",
+  "selected_phase2_candidate": "Regularized Gradient Boosting (unshrunk)",
+  "train_rows": 11813,
+  "validation_rows": 2213,
+  "permutation_rows": 800,
+  "shap_rows": 300,
+  "verified_24h_rows": 17614,
+  "dataset_source": "https://data.mendeley.com/datasets/c837v6p8ph/2",
+  "important_note": "No model retraining; no new independent generalization claim; not for irrigation control",
+  "example": {
+    "timestamp": "2025-09-04 05:40:00",
+    "zone": 5,
+    "current_soil_moisture": 22.0,
+    "actual_24h_soil_moisture": 19.0,
+    "unclipped_model_predicted_delta": -3.9174,
+    "forecast_soil_moisture": 18.0826,
+    "shap_base_delta": -0.4133,
+    "grouped_shap_sum": -3.504,
+    "max_shap_reconstruction_difference": 7.993605777301127e-15
+  }
+}

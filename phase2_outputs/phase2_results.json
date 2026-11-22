@@ -1,0 +1,311 @@
+{
+  "title": "AgroFlow AI Phase 2: exploratory time-aware benchmarking",
+  "source": "https://data.mendeley.com/datasets/c837v6p8ph/2",
+  "total_source_rows": 47068,
+  "verified_exact_24h_windows": 17614,
+  "per_zone_audit": [
+    {
+      "zone": 1,
+      "source_rows": 9531,
+      "verified_24h_rows": 4533,
+      "excluded_rows": 4998,
+      "first_valid_timestamp": "2025-07-23 08:00:00",
+      "last_valid_timestamp": "2025-09-03 18:50:00"
+    },
+    {
+      "zone": 2,
+      "source_rows": 11929,
+      "verified_24h_rows": 7077,
+      "excluded_rows": 4852,
+      "first_valid_timestamp": "2025-07-23 08:10:00",
+      "last_valid_timestamp": "2025-09-22 10:10:00"
+    },
+    {
+      "zone": 3,
+      "source_rows": 1118,
+      "verified_24h_rows": 0,
+      "excluded_rows": 1118,
+      "first_valid_timestamp": null,
+      "last_valid_timestamp": null
+    },
+    {
+      "zone": 4,
+      "source_rows": 12676,
+      "verified_24h_rows": 3774,
+      "excluded_rows": 8902,
+      "first_valid_timestamp": "2025-07-23 08:10:00",
+      "last_valid_timestamp": "2025-09-22 14:40:00"
+    },
+    {
+      "zone": 5,
+      "source_rows": 11814,
+      "verified_24h_rows": 2230,
+      "excluded_rows": 9584,
+      "first_valid_timestamp": "2025-09-01 00:40:00",
+      "last_valid_timestamp": "2025-09-19 15:10:00"
+    }
+  ],
+  "chronological_boundaries": {
+    "train_val": "2025-09-04 05:00:00",
+    "val_test": "2025-09-12 13:40:00"
+  },
+  "split_rows": {
+    "train": 11813,
+    "validation": 2213,
+    "historical_test": 2643
+  },
+  "walk_forward_folds_within_train_only": [
+    {
+      "fold": 1,
+      "train_rows": 4758,
+      "validation_rows": 1557,
+      "validation_start": "2025-08-15 16:40:00",
+      "validation_end": "2025-08-20 17:50:00"
+    },
+    {
+      "fold": 2,
+      "train_rows": 6244,
+      "validation_rows": 2132,
+      "validation_start": "2025-08-20 17:50:00",
+      "validation_end": "2025-08-26 19:10:00"
+    },
+    {
+      "fold": 3,
+      "train_rows": 8415,
+      "validation_rows": 3012,
+      "validation_start": "2025-08-26 19:10:00",
+      "validation_end": "2025-09-03 04:50:00"
+    }
+  ],
+  "model_features": [
+    "soil_moisture",
+    "weather_temp",
+    "weather_humidity",
+    "weather_rain",
+    "weather_pressure",
+    "weather_wind_speed",
+    "weather_radiation",
+    "soil_temperature_0-7cm",
+    "soil_temperature_7-18cm",
+    "irrigation_duration_minutes",
+    "month",
+    "hour",
+    "zone_1",
+    "zone_2",
+    "zone_3",
+    "zone_4",
+    "zone_5"
+  ],
+  "selected_weights_from_train_only_walk_forward": {
+    "Ridge": 0.0,
+    "Random Forest": 0.0,
+    "Regularized Gradient Boosting": 0.0
+  },
+  "model_selected_on_original_validation": "Regularized Gradient Boosting (unshrunk)",
+  "metrics": [
+    {
+      "split": "train",
+      "model": "Persistence",
+      "blend_weight": 0.0,
+      "n": 11813,
+      "mae": 1.02901,
+      "rmse": 2.83876,
+      "r2": 0.98563
+    },
+    {
+      "split": "train",
+      "model": "Ridge (unshrunk)",
+      "blend_weight": 1.0,
+      "n": 11813,
+      "mae": 1.00433,
+      "rmse": 2.0044,
+      "r2": 0.99284
+    },
+    {
+      "split": "train",
+      "model": "Ridge (CV blended)",
+      "blend_weight": 0.0,
+      "n": 11813,
+      "mae": 1.02901,
+      "rmse": 2.83876,
+      "r2": 0.98563
+    },
+    {
+      "split": "train",
+      "model": "Random Forest (unshrunk)",
+      "blend_weight": 1.0,
+      "n": 11813,
+      "mae": 0.66799,
+      "rmse": 1.50979,
+      "r2": 0.99594
+    },
+    {
+      "split": "train",
+      "model": "Random Forest (CV blended)",
+      "blend_weight": 0.0,
+      "n": 11813,
+      "mae": 1.02901,
+      "rmse": 2.83876,
+      "r2": 0.98563
+    },
+    {
+      "split": "train",
+      "model": "Regularized Gradient Boosting (unshrunk)",
+      "blend_weight": 1.0,
+      "n": 11813,
+      "mae": 0.82646,
+      "rmse": 1.91281,
+      "r2": 0.99348
+    },
+    {
+      "split": "train",
+      "model": "Regularized Gradient Boosting (CV blended)",
+      "blend_weight": 0.0,
+      "n": 11813,
+      "mae": 1.02901,
+      "rmse": 2.83876,
+      "r2": 0.98563
+    },
+    {
+      "split": "validation",
+      "model": "Persistence",
+      "blend_weight": 0.0,
+      "n": 2213,
+      "mae": 1.07569,
+      "rmse": 1.73006,
+      "r2": 0.9935
+    },
+    {
+      "split": "validation",
+      "model": "Ridge (unshrunk)",
+      "blend_weight": 1.0,
+      "n": 2213,
+      "mae": 1.92361,
+      "rmse": 2.39503,
+      "r2": 0.98754
+    },
+    {
+      "split": "validation",
+      "model": "Ridge (CV blended)",
+      "blend_weight": 0.0,
+      "n": 2213,
+      "mae": 1.07569,
+      "rmse": 1.73006,
+      "r2": 0.9935
+    },
+    {
+      "split": "validation",
+      "model": "Random Forest (unshrunk)",
+      "blend_weight": 1.0,
+      "n": 2213,
+      "mae": 1.20929,
+      "rmse": 1.71866,
+      "r2": 0.99359
+    },
+    {
+      "split": "validation",
+      "model": "Random Forest (CV blended)",
+      "blend_weight": 0.0,
+      "n": 2213,
+      "mae": 1.07569,
+      "rmse": 1.73006,
+      "r2": 0.9935
+    },
+    {
+      "split": "validation",
+      "model": "Regularized Gradient Boosting (unshrunk)",
+      "blend_weight": 1.0,
+      "n": 2213,
+      "mae": 0.85548,
+      "rmse": 1.41607,
+      "r2": 0.99565
+    },
+    {
+      "split": "validation",
+      "model": "Regularized Gradient Boosting (CV blended)",
+      "blend_weight": 0.0,
+      "n": 2213,
+      "mae": 1.07569,
+      "rmse": 1.73006,
+      "r2": 0.9935
+    },
+    {
+      "split": "historical_test",
+      "model": "Persistence",
+      "blend_weight": 0.0,
+      "n": 2643,
+      "mae": 0.42111,
+      "rmse": 0.79287,
+      "r2": 0.99832
+    },
+    {
+      "split": "historical_test",
+      "model": "Ridge (unshrunk)",
+      "blend_weight": 1.0,
+      "n": 2643,
+      "mae": 1.28761,
+      "rmse": 1.70732,
+      "r2": 0.99223
+    },
+    {
+      "split": "historical_test",
+      "model": "Ridge (CV blended)",
+      "blend_weight": 0.0,
+      "n": 2643,
+      "mae": 0.42111,
+      "rmse": 0.79287,
+      "r2": 0.99832
+    },
+    {
+      "split": "historical_test",
+      "model": "Random Forest (unshrunk)",
+      "blend_weight": 1.0,
+      "n": 2643,
+      "mae": 1.00811,
+      "rmse": 1.46389,
+      "r2": 0.99428
+    },
+    {
+      "split": "historical_test",
+      "model": "Random Forest (CV blended)",
+      "blend_weight": 0.0,
+      "n": 2643,
+      "mae": 0.42111,
+      "rmse": 0.79287,
+      "r2": 0.99832
+    },
+    {
+      "split": "historical_test",
+      "model": "Regularized Gradient Boosting (unshrunk)",
+      "blend_weight": 1.0,
+      "n": 2643,
+      "mae": 0.65239,
+      "rmse": 1.15085,
+      "r2": 0.99647
+    },
+    {
+      "split": "historical_test",
+      "model": "Regularized Gradient Boosting (CV blended)",
+      "blend_weight": 0.0,
+      "n": 2643,
+      "mae": 0.42111,
+      "rmse": 0.79287,
+      "r2": 0.99832
+    }
+  ],
+  "validation_selected_percent_improvement_vs_persistence": 20.47,
+  "historical_test_selected_percent_improvement_vs_persistence": -54.92,
+  "important_limitations": [
+    "This research forecast is not a field-tested irrigation controller.",
+    "The historical test period was repeatedly viewed in earlier V1/V2 development; it is NOT an untouched independent holdout.",
+    "A zero walk-forward blend weight means the model's learned correction was rejected; it is exactly persistence, not ML success.",
+    "V2-style gradient boosting regularization was informed by earlier exploratory work; not a blind comparison.",
+    "Only targets exactly 24 clock-hours after the input reading are included; publisher's raw 144-row target is not always 24 hours.",
+    "For a strictly causal prediction, features include only contemporaneous or past information, not future rain/water/targets.",
+    "An expanding walk-forward with a 24h training-label purge is used inside the train partition; adjacent test targets still overlap heavily.",
+    "The same sites, one summer season, sensor gaps, and temporal shift limit generalization.",
+    "Zone 3 provides no exact 24-hour forecasting windows. Later historical test includes only zones 2, 4, 5.",
+    "Post-hoc error grouping by observed future change must never be used as an input at inference.",
+    "The best validation model is chosen without optimizing against the historical test results in this script; however earlier development viewed the test."
+  ]
+}
